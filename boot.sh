@@ -31,7 +31,7 @@ echo "Booted up"
 function runcmd {
     printf "[ HonkVPS ]: "
     read -r cmdtorun
-    ./cmd -S . /bin/bash -c "$cmdtorun"
+    ./runner -S . /bin/bash -c "$cmdtorun"
     runcmd
 }
 #function runcmd {

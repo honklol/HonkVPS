@@ -1,6 +1,6 @@
 const { exec } = require("child_process");
 
-exec("bash boot.sh", (error, stdout, stderr) => {
+exec("bash boot", (error, stdout, stderr) => {
     if (error) { 
         console.log(`error: ${error.message}`);
         return;
